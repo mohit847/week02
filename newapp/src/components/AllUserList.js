@@ -23,7 +23,7 @@ import Test from "./Test";
 // functional based component 
 
 const AllUserList = () => {
-  // eslint-disable-next-line
+  
   const [state, setState] = useState({
     name: "Priyansh",
   });
