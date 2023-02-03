@@ -12,7 +12,7 @@ const UserDetails = ({ user = {} }) => {
       </h5>
       <h1>{h1Text}</h1>
       <button
-        onClick={(e) => {
+        onClick={() => {
           setH1Text("This is Cipher Schools")
         }}
       >

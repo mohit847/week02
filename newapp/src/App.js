@@ -1,11 +1,12 @@
-import AllUserList from './components/AllUserList';
+// import AllUserList from './components/AllUserList';
 import './App.css';
 // import Test from './Test';
+import Name from './components/Name';
 
 function App() {
   return (
     <div>
-      <AllUserList />
+      <Name />
       
     </div>
   );
