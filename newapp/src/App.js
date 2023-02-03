@@ -1,16 +1,18 @@
-import './App.css';
-import AllUserList from './components/AllUserList';
-// import Test from './Test';
-import Name from './components/Name';
-import SignUpForm from './components/SignUpForm';
-import SumNumbers from './components/SumNumbers';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div>
-      <h1>This is a Component</h1>
-      <SignUpForm />
-      
+      <BrowserRouter>
+      <Header/>
+        <Routes>
+          <Route path={"/"} element={<h1>This is on Home Page</h1>} />
+          <Route path={"/contact"} element={<h1>This is on Contact Page</h1>} />
+          <Route path={"/about"} element={<h1>This is on About Page</h1>} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
