@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import TaskScreen from "./components/TaskScreen";
 import CounterComponent from "./components/CounterComponent";
+import Photos from "./components/Photos";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path={"/about"} element={<h1>This is on About Page</h1>} />
           <Route path={"/tasks"} element={<TaskScreen />} />
           <Route path={"/counter"} element={<CounterComponent />} />
+          <Route path={"/photos"} element={<Photos />} />
         </Routes>
 
       </BrowserRouter>
