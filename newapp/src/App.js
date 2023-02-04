@@ -4,8 +4,13 @@ import Header from "./components/Header";
 import TaskScreen from "./components/TaskScreen";
 import CounterComponent from "./components/CounterComponent";
 import Photos from "./components/Photos";
+import higherOrderComponent from "./components/Hoc";
+import SampleRenderProps from "./components/SampleRenderProps";
 
 function App() {
+  const TestApp = higherOrderComponent(()=>{
+    return <div>Test App</div>
+  })
   return (
     <div>
       <BrowserRouter>
@@ -17,6 +22,8 @@ function App() {
           <Route path={"/tasks"} element={<TaskScreen />} />
           <Route path={"/counter"} element={<CounterComponent />} />
           <Route path={"/photos"} element={<Photos />} />
+          <Route path={"/test"} element={<TestApp />} />
+          <Route path={"/sample"} element={<SampleRenderProps />} />
         </Routes>
 
       </BrowserRouter>
